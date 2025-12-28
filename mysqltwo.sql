@@ -1,5 +1,5 @@
 CREATE TABLE EmployeeSary(
-	FirstName varchar, LastName varchar, Age Int, Salary varchar, Post varchar) 
+	FirstName varchar(50), LastName varchar(50), Age Int, Salary varchar(50), Post varchar(50)) 
 
 SELECT TOP (1000) [FirstName]
       ,[LastName]
