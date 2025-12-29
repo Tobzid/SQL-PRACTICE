@@ -1,0 +1,47 @@
+SELECT TOP (1000) [EmployeeID]
+      ,[FirstName]
+      ,[LastName]
+      ,[HireDate]
+      ,[Salary]
+  FROM [SQLTutorialOne].[dbo].[EmployeeSalary]
+
+  INSERT INTO EmployeeSalary (EmployeeID, FirstName, LastName, HireDate, Salary)
+  VALUES 
+(1, 'Jane', 'Dame', '2024-12-02', 2280) 
+, (2, 'Jane', 'Smith', '2023-06-11', 2949)
+,(3, 'Mike' , 'Johnson', '2025-7-11', 3200)
+,(4, 'Sarah', 'Williams', '11-03-2022', 2800)
+,(5, 'Sean', 'Tizle', '06-06-2024', 4200)
+
+/*
+Some Code that can be use in SQL
+
+SELECT *, Top, Distinct, Count, As, Max, Min, Avg
+*/
+
+SELECT Dem.FirstName, Dem.LastName
+FROM SQLTutorial.dbo.EmployeeDemographics AS Dem
+JOIN SQLTutorial.dbo.EmployeeSalary AS Sal
+    ON Dem.FirstName = Sal.FirstName;
+
+INSERT INTO EmployeeSalary (
+EmployeeID,FirstName, LastName, HireDate, Salary
+)
+VALUES
+(101, 'Tobzid    ', '     Switch  ', '2025-02-16', 4008)
+
+
+/*
+Trim out excess space
+*/
+
+SELECT FirstName, RTRIM(FirstName) as firstName
+FROM EmployeeSalary;
+
+SELECT FirstName, LTRIM(LastName) as lastName
+FROM EmployeeSalary;
+
+SELECT FirstName, TRIM(firstName) as firstName
+FROM EmployeeSalary;
+
+
