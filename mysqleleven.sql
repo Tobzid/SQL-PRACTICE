@@ -16,3 +16,9 @@ FROM PortfolioProject..NashvilleHousingdata
 
 SELECT *
 FROM PortfolioProject..NashvilleHousingdata
+
+ALTER TABLE PortforlioProjct..NashvileHousingdata
+DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress
+
+ALTER TABLE PortforlioProjct..NashvileHousingdata
+DROP COLUMN SaleDate
